@@ -30,3 +30,39 @@
 `sudo apt install php libapache2-mod-php php-mysql`
 
 ![PHP Installation](./images/php%20installation.png)
+
+`sudo mkdir /var/www/projectlamp`
+
+`sudo chown -R $USER:$USER /var/www/projectlamp`
+
+![PHP Folder](./images/folder%20user%20ownership.png)
+
+`sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4 > /var/www/projectlamp/index.html`
+
+![Index.html page](./images/index.html%20page.png)
+
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+
+### Change the Order of index.html and index.php
+
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+
+### Change this
+`<IfModule mod_dir.c>`
+        `DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm`
+`</IfModule>`
+
+`<IfModule mod_dir.c>`
+        `DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm`
+`</IfModule>`
+
+`vim /var/www/projectlamp/index.php`
+
+### Put this into index.php file
+
+`<?php`
+`phpinfo();`
+
+`sudo systemctl reload apache2`
+
+![PHP Index.php page](./images/index.php.png)
