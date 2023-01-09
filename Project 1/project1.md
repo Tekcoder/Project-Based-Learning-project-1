@@ -43,11 +43,11 @@
 
 `sudo vim /etc/apache2/mods-enabled/dir.conf`
 
-### Change the Order of index.html and index.php
+**Change the Order of index.html and index.php**
 
 `sudo vim /etc/apache2/mods-enabled/dir.conf`
 
-### Change this
+**Change this**
 `<IfModule mod_dir.c>`
         `DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm`
 `</IfModule>`
@@ -58,7 +58,7 @@
 
 `vim /var/www/projectlamp/index.php`
 
-### Put this into index.php file
+**Put this into index.php file**
 
 `<?php`
 `phpinfo();`
