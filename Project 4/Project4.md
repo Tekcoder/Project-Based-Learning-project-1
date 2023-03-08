@@ -58,3 +58,26 @@
 `sudo npm install body-parser`
 
 ![Body Parser Installation](./images/npm-bodyparser.png)
+
+## Initilaize node in the Books directory
+
+`npm init`
+
+![Npm Initialization](./images/npm-init.png)
+
+## Server.Js Content
+
+![Server JS](./images/serverjs.png)
+
+## Install Express.Js and Mongoose
+
+![Express JS Installation](./images/expressjs.png)
+
+## Create a Routes File in the APP.jS Folder
+
+![Routes.js file](./images/routesjs.png)
+
+## Create a Book.JS in the Models Folder
+
+![Book.js file](./images/bookjs.png)
+
