@@ -37,3 +37,24 @@
 `sudo apt install -y mongodb`
 
 ![Install MongoDB](./images/install-mongo.png)
+
+## Start the Service
+`sudo service mongodb start`
+
+![Start MongoDB Service](./images/mongodb-status.png)
+## Check the MongoDB Service
+
+`sudo systemctl status mongodb`
+
+![MongoDB Status Service](./images/mongodb-status.png)
+
+## Install Node Package Manager
+
+`sudo apt install -y npm`
+
+![Npm Installation](./images/npm-bodyparser.png)
+
+## Install Body Parser
+`sudo npm install body-parser`
+
+![Body Parser Installation](./images/npm-bodyparser.png)
