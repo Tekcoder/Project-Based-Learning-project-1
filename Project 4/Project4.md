@@ -75,9 +75,16 @@
 
 ## Create a Routes File in the APP.jS Folder
 
-![Routes.js file](./images/routesjs.png)
+![Routes.js File Creation](./images/routesjs.png)
 
 ## Create a Book.JS in the Models Folder
 
-![Book.js file](./images/bookjs.png)
+![Book.js file Creation](./images/bookjs.png)
 
+## Create a Script.JS in the public folder
+
+![Script JS File Creation](./images/scriptjs.png)
+
+## Create an Index.html file in the public folder
+
+![Index.Html file creation](./images/indexfile.png)
