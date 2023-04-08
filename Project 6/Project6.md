@@ -33,4 +33,11 @@
 # Use `sudo ls /dev` to see all the devices in the Linux System
 
 ![List all the devices](./images/webserver-device.jpg)
- 
+
+# Use `sudo lsblk` utility to view the newly configured partition on each of the 3 disks.
+
+![Newly Configured Partition](./images/webserver-partition.jpg)
+
+# Installation of LVM (Logical Volume Management Package)
+
+![Installation of LVM](./images/lvm-installation.jpg)
