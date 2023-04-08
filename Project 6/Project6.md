@@ -7,3 +7,21 @@
 # Data Access or Management Layer (DAL): This is the layer for computer data storage and data access. Database Server or File System Server such as FTP server, or NFS Server
 
 ![Three-Tier Architecture](./images/three-tier-architecture.jpg)
+
+# Your 3-Tier Setup
+
+# A Laptop or PC to serve as a client
+
+# An EC2 Linux Server as a web server (This is where you will install WordPress)
+
+# An EC2 Linux server as a database (DB) server
+
+`Use RedHat OS for this project`
+
+# Step 1 — Prepare a Web and Database Server
+
+![Web and Database Server](./images/Web-and-Database-Server.jpg)
+
+# Created and Attached the EBS volumes to the Web and Database Servers
+
+![Attached Volumes](./images/attached-volumes.jpg)
