@@ -25,3 +25,12 @@
 # Created and Attached the EBS volumes to the Web and Database Servers
 
 ![Attached Volumes](./images/attached-volumes.jpg)
+
+# Use `lsblk` command to inspect what block devices are attached to the server 
+
+![Lsblk command](./images/webserver-lsblk.png)
+
+# Use `sudo ls /dev` to see all the devices in the Linux System
+
+![List all the devices](./images/webserver-device.jpg)
+ 
