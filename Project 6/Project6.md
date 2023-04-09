@@ -76,3 +76,14 @@
 
 ![Mounted Devices](./images/mounted-files.jpg)
 
+# Install WordPress on your Web Server EC2
+
+![WordPress Installation](./images/wordpress-installation.jpg)
+
+# Configure DB to work with WordPress
+
+![Database Configuration](./images/database-configuration.jpg)
+
+# Configure WordPress to connect to remote database
+
+![Allow connection to the DB Server](./images/allow-web-server-access-db.jpg)
