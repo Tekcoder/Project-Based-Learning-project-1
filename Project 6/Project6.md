@@ -41,3 +41,11 @@
 # Installation of LVM (Logical Volume Management Package)
 
 ![Installation of LVM](./images/lvm-installation.jpg)
+
+# Checking All the disk partitions using `sudo lvmdiskscan`
+
+![All the disk partitions](./images/lvmdiskscan-partitions.jpg)
+
+# Use `sudo pvcreate` to create physical volumes
+
+![Physical Volumes](./images/physical-volumes.jpg)
