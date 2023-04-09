@@ -57,3 +57,13 @@
 # Use `sudo lvcreate -n name-of-logical-volume -L size-of-the-disk volume-group-name`
 
 ![Logical Volumes](./images/logical-volumes.jpg)
+
+# Use `mkfs.ext4` to format the logical volumes with ext4 filesystem
+
+![Format to Mk File System](./images/format-to-mkfs-filesystem.jpg)
+
+# Mounting and Restoring files
+
+![App files mounts and Log mounts](./images/mounting-the-disks-on-to-the-server.jpg)
+
+![App files mounts and Log mounts](./images/mounting-the-disks-on-to-the-server2.jpg)
