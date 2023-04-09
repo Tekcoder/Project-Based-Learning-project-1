@@ -49,3 +49,11 @@
 # Use `sudo pvcreate` to create physical volumes
 
 ![Physical Volumes](./images/physical-volumes.jpg)
+
+# Use `sudo vgcreate volume-group-name individual-physical-volumes` to create a volume group
+
+![Volume Groups](./images/volume-groups.jpg)
+
+# Use `sudo lvcreate -n name-of-logical-volume -L size-of-the-disk volume-group-name`
+
+![Logical Volumes](./images/logical-volumes.jpg)
