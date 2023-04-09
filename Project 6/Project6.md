@@ -67,3 +67,12 @@
 ![App files mounts and Log mounts](./images/mounting-the-disks-on-to-the-server.jpg)
 
 ![App files mounts and Log mounts](./images/mounting-the-disks-on-to-the-server2.jpg)
+
+# Updating the /etc/fstab for persisting the disk volumes after restart
+
+![Updating the /etc/fstab for Persistence](./images/Update-fstab-using-Blkid-for-persistence.jpg)
+
+# Summary of Mounted Devices on the Disk
+
+![Mounted Devices](./images/mounted-files.jpg)
+
