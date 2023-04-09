@@ -87,3 +87,21 @@
 # Configure WordPress to connect to remote database
 
 ![Allow connection to the DB Server](./images/allow-web-server-access-db.jpg)
+
+# Connect Web Server with DB Server
+
+![Connection between Web Server and DB Server](./images/web-server-connected-with-db.jpg)
+
+# Updating the Wp-config.php files
+
+![Database Credentials](./images/database-credentials.jpg)
+
+# Loading the WebServer to Install the WordPress Site
+
+![Wordpress Installation](./images/wordpress-webserver1.jpg)
+
+![Wordpress Installation](./images/wordpress-webserver2.jpg)
+
+# Completion of the WordPress CLient-Server Project
+
+![Final Project](./images/Successful-WordPress-Logging.jpg)
