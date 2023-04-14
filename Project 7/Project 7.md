@@ -15,3 +15,13 @@
 # 6 - Prometheus – An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.
 
 # 7 - Kibana – Kibana is a free and open user interface that lets you visualize your Elasticsearch data and navigate the Elastic Stack.
+
+## Components of the Infrastructure 
+
+# 1 - Webserver Linux: Red Hat Enterprise Linux 8
+
+# 2 - Database Server: Ubuntu 20.04 + MySQL
+
+# 3 - Storage Server: Red Hat Enterprise Linux 8 + NFS Server
+
+![Three-Tier-Architecture](./Images/3-tier-Application-Infrastructure.jpg)
