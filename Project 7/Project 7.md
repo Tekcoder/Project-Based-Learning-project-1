@@ -163,3 +163,81 @@
 `setsebool -P httpd_execmem 1`
 
 
+# Installing Git on the Web Server
+
+![git-installation](./Images/git-installation.png)
+
+# Clone the tooling source code from your repo (https://github.com/Tekcoder/tooling)
+
+`sudo git clone https://github.com/Tekcoder/tooling.git`
+![git-clone](./Images/git-clone.png)
+
+# Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to /var/www/html
+
+`sudo mv tooling/* .`
+
+`ls`
+
+`ls tooling`
+
+`sudo rm -r tooling`
+
+`sudo mv html/* .`
+
+`ls`
+
+`sudo rm -r html`
+
+![website-files-in-html-folder](./Images/website-files-in-html-folder.png)
+
+# Install MySql on the Web Servers
+
+![mysql-server-install-webservers](./Images/mysql-server-install-webservers.png)
+
+# Update the website’s configuration to connect to the database (in /var/www/html/functions.php file)
+
+![functions.php-details](./Images/functions.php-details.png)
+
+# Apply tooling-db.sql script to your database using this command 
+
+`mysql -h <databse-private-ip> -u <db-username> -p <db-pasword> < tooling-db.sql`
+
+![apply-tooling-script](./Images/apply-tooling-script.png)
+`mysql -h 172.31.41.86 -u webaccess -ppassword`
+
+`mysql -h 172.31.41.86 -u webaccess -ppassword tooling < tooling-db.sql`
+
+`mysql -h 172.31.41.86 -u webaccess -ppassword tooling`
+
+`SHOW DATABASES;`
+
+`select * from users;`
+
+![show-databases-and -users](./Images/show-databases-and%20-users.png)
+
+`exit`
+
+`sudo systemctl retart httpd`
+
+# Disable SELinux sudo setenforce 0
+
+`sudo setenforce 0`
+
+# To make this change permanent – open following config file sudo vi /etc/sysconfig/selinux and set SELINUX=disabled then restart httpd.
+
+`sudo vi /etc/sysconfig/selinux`
+
+`sudo systemctl restart httpd`
+
+# Web Server 1 Login Interface
+
+![Web-server-1-Login](./Images/Web-server-1-Login.png)
+
+# Web Server 2 Login Interface
+
+![Web-server-2-Login](./Images/Web-server-2-Login.png)
+
+
+
+
+
