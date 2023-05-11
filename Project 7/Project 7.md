@@ -99,3 +99,67 @@
 # Install MySQL server
 
 ![MySql-Server-Installation](./Images/MySql-Server-Installation.png)
+
+# Create a database and name it tooling
+![tooling-database](./Images/tooling-database.png)
+
+# Create a database user and name it webaccess
+![database-user](./Images/database-user.png)
+
+# Grant permission to webaccess user on tooling database to do anything only from the webservers subnet cidr
+
+![database-user-privileges](./Images/database-user-privileges.png)
+
+# Update the bind address
+
+![bind-address-before](./Images/bind-address-before.png)
+
+![bind-address-after](./Images/bind-address-before.png)
+# Step 3 — Prepare the Web Servers
+
+# Launch a new EC2 instance with RHEL 8 Operating System
+
+![Database-Server-and-Web-Servers](./Images/Database-Server-and-Web-Servers.png)
+
+# Install NFS client
+
+![web-nfs-tools-installation](./Images/web-nfs-tools-installation.png)
+
+# Mount /var/www/ and target the NFS server’s export for apps
+
+`sudo mkdir /var/www`
+`sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www`
+
+![web-mounted-folder-on-nfs-mount-point](./Images/web-mounted-folder-on-nfs-mount-point.png)
+
+# Verify that NFS was mounted successfully by running df -h
+
+![web-nfs-confirm-mounted](./Images/web-nfs-confirm-mounted.png)
+
+# Make sure that the changes will persist on Web Server after reboot:
+
+`sudo vi /etc/fstab`
+
+![web-mount-nfs-persist](./Images/web-mount-nfs-persist.png)
+
+# Install Remi’s repository, Apache and PHP
+
+`sudo yum install httpd -y`
+
+`sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm`
+
+`sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm`
+
+`sudo dnf module reset php`
+
+`sudo dnf module enable php:remi-7.4`
+
+`sudo dnf install php php-opcache php-gd php-curl php-mysqlnd`
+
+`sudo systemctl start php-fpm`
+
+`sudo systemctl enable php-fpm`
+
+`setsebool -P httpd_execmem 1`
+
+
