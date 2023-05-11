@@ -64,3 +64,25 @@
 `sudo systemctl restart apache2`
 
 ![loadbalancer-details](./Images/loadbalancer-details.png)
+
+`LoadBalancer Website Interface`
+
+![loadbalancer-web-interface](./Images/loadbalancer-web-interface.png)
+
+`Open two ssh/Putty consoles for both Web Servers and run following command:`
+
+`sudo tail -f /var/log/httpd/access_log`
+
+`Try to refresh your browser page` `http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php` 
+
+# Log Details for the 2 Web Servers
+
+![webserver1-logdetails](./Images/webserver1-logdetails.png)
+
+![webserver2-logdetails](./Images/webserver2-logdetails.png)
+
+# Optional Step – Configure Local DNS Names Resolution
+
+![loadbalancer-host-files](./Images/loadbalancer-host-files.png)
+
+![loadbalancer-host-files2](./Images/loadbalancer-host-files2.png)
