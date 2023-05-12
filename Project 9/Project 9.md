@@ -39,3 +39,30 @@
 `4 - Perform initial Jenkins setup`
 
 ![jenkins-setup](./Images/jenkins-setup.png)
+
+![jenkins-setup2](./Images/jenkins-setup2.png)
+
+# Step 2 – Configure Jenkins to retrieve source codes from GitHub using Webhooks
+
+` Enable webhooks in your GitHub repository settings`
+
+![jenkins-github-webhook](./Images/jenkins-github-webhook.png)
+
+`Configure the new freestyle project and enable your first build`
+
+![first-build-jenkins](./Images/first-build-jenkins.png)
+
+![jenkins-console-output1](./Images/jenkins-console-output1.png)
+
+# Click "Configure" your job/project and add these two configurations
+
+`Configure triggering the job from GitHub webhook:`
+
+`Configure "Post-build Actions" to archive all the files – files resulted from a build are called "artifacts".`
+
+`Make an update in the repo and the build will trigger automatically`
+
+![second-build-jenkins](./Images/second-build-jenkins.png)
+
+
+
