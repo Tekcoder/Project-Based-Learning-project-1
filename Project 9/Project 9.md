@@ -64,5 +64,35 @@
 
 ![second-build-jenkins](./Images/second-build-jenkins.png)
 
+![jenkins-console-output2](./Images/jenkins-console-output2.png)
 
+`By default, the artifacts are stored on Jenkins server locally`
+
+`ls /var/lib/jenkins/jobs/freestyle_project_name/builds/<build_number>/archive/`
+
+![build-artifacts](./Images/build-artifacts.png)
+
+## CONFIGURE JENKINS TO COPY FILES TO NFS SERVER VIA SSH
+
+# Step 3 – Configure Jenkins to copy files to NFS server via SSH
+
+`1 - Install "Publish Over SSH" plugin`
+
+![Publish-over-SSH](./Images/Publish-over-SSH.png)
+
+`2 - Configure the job/project to copy artifacts over to NFS server.`
+
+`On main dashboard select "Manage Jenkins" and choose "Configure System" menu item.`
+
+`1 - Provide a private key (content of .pem file that you use to connect to NFS server via SSH/Putty)`
+`2 - Arbitrary name`
+`3 - Hostname – can be private IP address of your NFS server`
+`4 - Username – ec2-user (since NFS server is based on EC2 with RHEL 8)`
+`5 - Remote directory – /mnt/apps since our Web Servers use it as a mointing point to retrieve files from the NFS server`
+
+![SSH-setup](./Images/SSH-setup.png)
+
+`Configure it to send all files probuced by the build into our previouslys define remote directory.`
+
+![Send-artifacts-over-SSH](./Images/Send-artifacts-over-SSH.png)
 
