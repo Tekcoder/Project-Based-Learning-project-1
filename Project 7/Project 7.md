@@ -70,6 +70,17 @@
 
 ![NFS-Folders-Mounted-on-the-Logical-Volumes](./Images/NFS-Folders-Mounted-on-the-Logical-Volumes.png)
 
+`run sudo blkid /dev/nfs-vg/* `
+
+`/dev/nfs-vg/lv-apps: UUID=0340b708-58f5-44b1-af0a-edfe608c7156 BLOCK_SIZE="512" TYPE="xfs"`
+`/dev/nfs-vg/lv-logs: UUID=219c8bed-408c-4fa1-aa62-fc11d260f533 BLOCK_SIZE="512" TYPE="xfs"`
+`/dev/nfs-vg/lv-opt: UUID=98506620-ce49-4f19-a3c3-8af1deae64e1 BLOCK_SIZE="512" TYPE="xfs"`
+
+`copy UUID into the /etc/fstab file`
+
+`sudo vi /etc/fstab file`
+
+`Then run sudo mount -a and df -h to confirm`
 # Install NFS server
 
 # Make sure we set up permission that will allow our Web servers to read, write and execute files on NFS:
