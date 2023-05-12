@@ -96,3 +96,12 @@
 
 ![Send-artifacts-over-SSH](./Images/Send-artifacts-over-SSH.png)
 
+![build-artifacts-published-over-ssh1](./Images/build-artifacts-published-over-ssh1.png)
+
+![build-artifacts-published-over-ssh2](./Images/build-artifacts-published-over-ssh2.png)
+
+`To make sure that the files in /mnt/apps have been udated – connect via SSH/Putty to your NFS server and check README.MD file`
+
+`cat /mnt/apps/README.md`
+
+![build-artifacts-published-over-ssh3](./Images/build-artifacts-published-over-ssh3.png)
