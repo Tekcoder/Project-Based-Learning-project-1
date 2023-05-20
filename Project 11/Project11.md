@@ -17,3 +17,7 @@
 ![Apt-Update](./Images/Apt-Update.png)
 
 ![Apt-Upgrade](./Images/Apt-Upgrade.png)
+
+![Ansible-Installation](./Images/Ansible-Installation.png)
+
+![Ansible-Version](./Images/Ansible-Version.png)
