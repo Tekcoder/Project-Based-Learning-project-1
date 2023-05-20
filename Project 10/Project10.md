@@ -9,3 +9,11 @@
 `2 - Update /etc/hosts file for local DNS with Web Servers’ names (e.g. Web1 and Web2) and their local IP addresses`
 
 ![Etc-Host-File](./Images/Etc-Host-FIle.png)
+
+`3 - Install and configure Nginx as a load balancer to point traffic to the resolvable DNS names of the webservers`
+
+![installing-ngnix](./Images/installing-ngnix.png)
+
+![WebServers-NginxLB](./Images/WebServers-NginxLB.png)
+
+![NginxLB-Status](./Images/NginxLB-Status.png)
