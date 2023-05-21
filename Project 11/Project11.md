@@ -21,3 +21,25 @@
 ![Ansible-Installation](./Images/Ansible-Installation.png)
 
 ![Ansible-Version](./Images/Ansible-Version.png)
+
+`4 - Configure Jenkins build job to save your repository content every time you change it – this will solidify your Jenkins configuration skills acquired in Project 9.`
+
+![Ansible-Freestyle](./Images/Ansible-Freestyle.png)
+
+![Jenkins-Git-Repo](./Images/Jenkins-Git-Repo.png)
+
+![jenkins-webhook1](./Images/jenkins-webhook1.png)
+
+`5 - Test your setup by making some change in README.MD file in master branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder`
+
+![Autobuild-Jenkins-Github](./Images/Autobuild-Jenkins-Github.png)
+
+`ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`
+
+![Jenkins-archive](./Images/Jenkins-archive.png)
+
+![New-Jenkins-Setup](./Images/New-Jenkins-Setup.png)
+
+`NB: Assign an Elastic IP Address to the Jenkins Server`
+
+![Jenkins-ElasticIP](./Images/Jenkins-ElasticIP.png)
