@@ -49,3 +49,21 @@
 ![Ansible-VSC](./Images/Ansible-VSC.png)
 # BEGIN ANSIBLE DEVELOPMENT
 
+`1 - In your ansible-config-mgt GitHub repository, create a new branch that will be used for development of a new feature.`
+
+`2 - Checkout the newly created feature branch to your local machine and start building your code and directory structure`
+
+`3 - Create a directory and name it playbooks – it will be used to store all your playbook files.`
+
+![Playbooks-folder](./Images/Playbooks-folder.png)
+
+`4 - Create a directory and name it inventory – it will be used to keep your hosts organised.`
+
+![Inventory-folder](./Images/Inventory-folder.png)
+
+`5 - Within the playbooks folder, create your first playbook, and name it common.yml`
+
+`6 - Within the inventory folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, uat, and prod respectively.`
+
+![playbooks-and-inventory-files](./Images/playbooks-and-inventory-files.png)
+
