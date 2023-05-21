@@ -43,3 +43,9 @@
 `NB: Assign an Elastic IP Address to the Jenkins Server`
 
 ![Jenkins-ElasticIP](./Images/Jenkins-ElasticIP.png)
+
+# Step 2 – Prepare your development environment using Visual Studio Code
+
+![Ansible-VSC](./Images/Ansible-VSC.png)
+# BEGIN ANSIBLE DEVELOPMENT
+
