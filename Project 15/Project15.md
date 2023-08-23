@@ -42,3 +42,21 @@
 
 ![Modern-PrivateRTB1](./Images/Modern-PrivateRTB1.png)
 ![Modern-PrivateRTB2](./Images/Modern-PrivateRTB2.png)
+
+`10 - Create the Security Groups for External ALB, Reverse Proxy Nginx, Bastion Server, WordPress, Tooling, Internal ALB and Database Layer`
+
+![Modern-SecurityGroups](./Images/Modern-SecurityGroups.png)
+
+
+`11 - Created a Certificate for SSL in ACM`
+![Modern-ACMCert](./Images/Modern-ACMCert.png)
+![Modern-ACMCert2](./Images/Modern-ACMCert2.png)
+`12 - Created an Elastic FileSystem for persistent storage for files across the web servers`
+
+![Modern-EFS](./Images/Modern-EFS.png)
+
+`13 - Created the Access point for the WordPress and Tooling webservers to mount on EFS`
+![Modern-AccessPonts](./Images/Modern-AccessPonts.png)
+
+`14 - Created a KMS Key needed for the RDS Database`
+![Modern-KMSRDS](./Images/Modern-KMSRDS.png)
