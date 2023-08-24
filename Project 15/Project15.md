@@ -60,3 +60,12 @@
 
 `14 - Created a KMS Key needed for the RDS Database`
 ![Modern-KMSRDS](./Images/Modern-KMSRDS.png)
+
+`15 - Created an RDS Subnet Group`
+![Modern-RDS-SubnetGroup](./Images/Modern-RDS-SubnetGroup.png)
+
+`16 - Created AMIs for Nginx(Reverse proxy), Bastion, WordPress and Tooling servers`
+
+![Modern-AMIs1](./Images/Modern-AMIs1.png)
+![Modern-AMIs2](./Images/Modern-AMIs2.png)
+
